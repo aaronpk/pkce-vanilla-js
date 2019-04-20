@@ -42,7 +42,6 @@ document.getElementById("start").addEventListener("click", async function(e){
 
     // Create and store a new PKCE code_verifier (the plaintext random secret)
     var code_verifier = generateRandomString();
-    code_verifier = "eb4485eb8b34ce0e48289f8f5b68d565667d5c179957607821eea544";
     localStorage.setItem("pkce_code_verifier", code_verifier);
 
     // Hash and base64-urlencode the secret to use as the challenge
